@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nav with section</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="nav-link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#technology" class="nav-link">Technology</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div></nav>
+        </header>
+        <section class="home" id="home">
+        </section>
+        <section></section>
+        <section class="services" id="services">
+            <h1>Services</h1>
+        </section>
+        <section class="technology" id="technology">
+            <h1>technology</h1>
+        </section>
+        <section class="contact" id="contact">
+            <h1>Contact</h1>
+        </section>
+        <script>
+            window.addEventListener('scroll', function () {
+                let header = document.querySelector('header');
+                let windowPosition = window.scrollY > 0;
+                header.classList.toggle('scrolling-active', windowPosition);
+            })
+        </script>
+    </body>
+
+
+</html>
